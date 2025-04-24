@@ -22,9 +22,10 @@
 * `dirs -v`
 * `pushd .`
 
-select ITEM in $(dirs -l)
-do
-echo $ITEM
-cd $ITEM
+```bash
+# Select a dir and cd to it
+select ITEM in $(dirs -l); do
+    cd $ITEM
     break
 done
+```
